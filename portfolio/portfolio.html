@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		
+		function readmore(read)
+		{
+			var btn1 = document.getElementById("btn");
+			if(document.getElementById(read).style.display == "block")
+			{
+				document.getElementById(read).style.display = "none";
+				btn1.innerHTML = "Read More";
+
+			}
+			else
+			{
+             document.getElementById(read).style.display = "block" ;
+             btn1.innerHTML = "Read less";
+			}
+		}
+	</script>
+</head>
+<body>
+<div class="nav">
+	<span style="float: left;"><h6 id="navi">Home</h6></span>
+	<h6 id="navi">Feature</h6>
+	<h6 id="navi">About Us</h6>
+	<h6 id="navi">Our Team</h6>
+	<h6 id="navi">Portfolio</h6>
+	<h6 id="navi">Contact Us</h6>
+</div>
+<div>
+	<h2 class="head1">Designed with Float and Positioning</h2>
+	<h6 class="head2">Switch has be developed with simple, truly extensible option framework, Redux. The framework build on the WordPress setting API,supports a multitude of field types as well as custom error handling, custom field & validation types, and import/export functionality.Switch is a responsive onepage WordPress themes, can adapt automatically to mobile, tablet, desktop and Kindle. Forget to make separate layouts or contents for any other screen and viewing devices.</h6>
+</div>
+<div class="l1">
+	<div class="inner">
+		<img src="image1.jpg" id="image"><H5  style="text-align: center;margin-top: 10px;">Lab 1 GitHub</H5>
+		<div id="info">In this lab we performed the basic things like creating an account on github, adding collaborations. <span>...</span><span id="read">we have cresated branches in our repository, added files to it and remove dsome files and merged some files and finally solved commit confllilctls.</span><button onclick="readmore('read')" id="btn">Read More</button></div>
+	</div>
+	<div class="inner">
+		<img src="image2.jpg" id="image"><H5  style="text-align: center;margin-top: 10px;">Lab 2 Basic elemnts of HTML</H5>
+		<div id="info">In this lab we have created webpages using HTML language. <span>...</span><span id="read1">we have created a paragragh on selected topic given heading for it, added images, and added colors to it ensured text formatting and added anchors of the selected images.</span><button onclick="readmore('read1')" id="btn">Read More</button></div>
+	</div>
+</div>
+<div class="l1">
+	<div class="inner">
+		<img src="image3.jpg" id="image"><H5  style="text-align: center;margin-top: 10px;">Lab 3 Javascript</H5>
+		<div id="info">In this lab we have solved some programming problems in codewars using javascript <span>...</span><span id="read2">Tlanguage like conditional statements, loop statements and Datatype manipulation.</span><button onclick="readmore('read2')" id="btn">Read More</button></div>
+	</div>
+	<div class="inner">
+		<img src="image4.jpg" id="image"><H5  style="text-align: center;margin-top: 10px;">Lab 4 Dynamic HTML tables</H5>
+		<div id="info">In this lab we have added styles to lab 2 like adding webpage title, title, lab description, <span>...</span><span id="read3">designed a HTML table using javascript variable which allows adding new rows to it and allows user to remove the rows.</span><button onclick="readmore('read3')" id="btn">Read More</button></div>
+	</div>
+</div>
+<div class="l1">
+	<div class="inner">
+		<img src="image5.jpg" id="image"><H5  style="text-align: center;margin-top: 10px;">Lab 5 Float and Positioning</H5>
+		<div id="info">Switch has be developed with simple, truly extensible option framework, Redux.<span>...</span><span id="read4">The framework build on the WordPress setting API,supports a multitude of field types as well as custom error handling, custom field & validation types, and import/export functionality.Switch is a responsive onepage WordPress themes, can adapt automatically to mobile, tablet, desktop and Kindle. Forget to make separate layouts or contents for any other screen and viewing devices.</span><button onclick="readmore('read4')" id="btn">Read More</button></div>
+	</div>
+	<div class="inner">
+		<img src="image6.jpg" id="image"><H5  style="text-align: center;margin-top: 10px;">Lab 6 TBH</H5>
+		<div id="info">TBH<span>...</span><span id="read5">.... Yet to come</span><button onclick="readmore('read5')" id="btn">Read More</button></div>
+	</div>
+</div>
+<div class="footer">
+	<p class="footer1">Reference from : <link rel="stylesheet" type="text/css" href="https://www.themexpert.com/wordpress-themes/switch">https://www.themexpert.com/wordpress-themes/switch</p>
+</div>
+</body>
+</html>
